@@ -18,8 +18,13 @@ if st.button("Predict"):
 
     prediction = model.predict(input_scaled)
     probabilities = model.predict_proba(input_scaled)
+    
+    prob_dict = {
+    "Not Profitable": f"{probabilities[0][0] * 100:.2f}%",
+    "Profitable": f"{probabilities[0][1] * 100:.2f}%"
+}
 
-    st.write("Probabilities:", probabilities)
+    st.write(prob_dict)
 
     if prediction[0] == 1:
         st.success("✅ Order is likely to be Profitable")
