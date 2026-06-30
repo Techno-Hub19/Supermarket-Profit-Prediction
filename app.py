@@ -27,6 +27,6 @@ if st.button("Predict"):
     st.write(prob_dict)
 
     if prediction[0] == 1:
-        st.success("✅ Order is likely to be Profitable")
+        st.success("Order is likely to be Profitable")
     else:
-        st.error("❌ Order is likely to be Not Profitable")
+        st.error("Order is likely to be Not Profitable")
