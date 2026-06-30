@@ -22,8 +22,8 @@ The model takes two key inputs:
 Based on the input values, the model provides:
 
 1. **Binary Classification**: 
-   - ✅ **Profitable** - The order is likely to generate profit
-   - ❌ **Not Profitable** - The order may result in loss or minimal profit
+   - **Profitable** - The order is likely to generate profit
+   - **Not Profitable** - The order may result in loss or minimal profit
 
 2. **Probability Scores**: 
    - Confidence levels showing how likely each outcome is
